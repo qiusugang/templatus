@@ -20,7 +20,7 @@ exports[`App matches snapshot 1`] = `
     </defs>
     <polygon fill="url(#grad2)" points="0,80 0,100 100,100 100,50"></polygon>
   </svg>
-  <header class="flex justify-between items-end p-5 space-x-5 lg:flex-col lg:items-stretch lg:p-0 lg:space-y-36 lg:space-x-0 lg:fixed lg:top-10 lg:left-10"><img src="/images/logo.svg" alt="Logo" class="p-3 w-20 h-20 bg-gradient-to-br from-slate-200 to-white rounded lg:w-56 lg:h-56" width="150" height="150">
+  <header class="flex justify-between items-end p-5 space-x-5 lg:flex-col lg:items-stretch lg:p-0 lg:space-y-36 lg:space-x-0 lg:fixed lg:top-10 lg:left-10"><img src="[object Object]" alt="Logo" class="p-3 w-20 h-20 bg-gradient-to-br from-slate-200 to-white rounded lg:w-56 lg:h-56" width="150" height="150">
     <nav role="tablist" aria-orientation="horizontal" class="flex space-x-5 text-lg font-medium text-center uppercase lg:flex-col lg:space-y-5 lg:space-x-0"><a href="/" class="router-link-active router-link-exact-active text-rails-dark bg-white lg:bg-rails-dark lg:text-white px-2 py-1 rounded-md lg:shadow" id="headlessui-tabs-tab-1" role="tab" aria-selected="true" tabindex="0" aria-current="page">Home</a><a href="/about" class="hover:bg-slate-300 hover:text-rails-dark bg-transparent text-white lg:text-rails-dark lg:bg-white px-2 py-1 rounded-md lg:shadow" id="headlessui-tabs-tab-2" role="tab" aria-selected="false" tabindex="-1">About</a></nav>
   </header>
   <main class="relative flex-1 py-5 px-4 bg-white shadow-md sm:px-6 lg:px-8 lg:mt-10 lg:mr-16 lg:ml-96 lg:max-w-5xl lg:rounded-xl">Home page</main>
