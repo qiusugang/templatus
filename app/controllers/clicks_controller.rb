@@ -5,17 +5,12 @@ class ClicksController < ApplicationController
 
     expires_in 0, must_revalidate: true
 
-    respond_to do |format|
-      format.json { render json: { total: Click.count, items: clicks } }
-    end
+    respond_to { |format| format.json { render json: { total: Click.count, items: clicks } } }
   end
 
   def create
-    click =
-      Click.create! user_agent: request.user_agent,
-                    ip: anonymize(request.remote_ip)
+    click = Click.create! user_agent: request.user_agent, ip: request.remote_ip.to_s
     ActionCable.server.broadcast 'clicks_channel', click
-
     head :ok
   end
 

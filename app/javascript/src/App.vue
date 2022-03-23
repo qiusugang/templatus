@@ -13,13 +13,11 @@ import AppFooter from '@/components/AppFooter.vue';
     <app-header class="lg:fixed lg:top-10 lg:left-10" />
 
     <main
-      class="relative flex-1 bg-white py-5 px-4 shadow-md sm:px-6 lg:mt-10 lg:mr-16 lg:ml-96 lg:max-w-5xl lg:rounded-xl lg:px-8"
+      class="relative flex-1 bg-gray-200 py-5 px-4 shadow-md sm:px-6 lg:mt-10 lg:mr-16 lg:ml-96 lg:max-w-5xl lg:rounded-xl lg:px-8"
     >
       <router-view />
     </main>
 
-    <app-footer
-      class="relative mt-2 mb-6 lg:mr-16 lg:ml-96 lg:max-w-5xl lg:px-0"
-    />
+    <app-footer class="relative mt-2 mb-6 lg:mr-16 lg:ml-96 lg:max-w-5xl lg:px-0" />
   </div>
 </template>

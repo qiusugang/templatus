@@ -5,7 +5,7 @@ module ApplicationHelper
       ruby: ruby_version,
       rails: rails_version,
       puma: puma_version,
-      postgres: postgres_version,
+      postgres: 'sqlite3',
       redis: redis_version,
       sidekiq: sidekiq_version,
     }

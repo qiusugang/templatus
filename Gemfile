@@ -1,7 +1,8 @@
-source 'https://rubygems.org'
+# source 'https://rubygems.org'
+source 'https://gems.ruby-china.com/'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.1'
+# ruby '3.1.1'
 
 # Full-stack web application framework. (https://rubyonrails.org)
 gem 'rails', '~> 7.0.2', '>= 7.0.2.2'
@@ -18,8 +19,7 @@ gem 'jsbundling-rails'
 # Bundle and process CSS with Tailwind, Bootstrap, PostCSS, Sass in Rails via Node.js. (https://github.com/rails/cssbundling-rails)
 gem 'cssbundling-rails'
 
-# Pg is the Ruby interface to the PostgreSQL RDBMS (https://github.com/ged/ruby-pg)
-gem 'pg', '~> 1.1'
+gem "sqlite3", "~> 1.4"
 
 # Puma is a simple, fast, threaded, and highly parallel HTTP 1.1 server for Ruby/Rack applications (https://puma.io)
 gem 'puma', '~> 5.0'
@@ -38,6 +38,10 @@ gem 'honeybadger'
 
 # Tame Rails' multi-line logging into a single line per request (https://github.com/roidrage/lograge)
 gem 'lograge'
+gem 'sidekiq'
+gem 'image_processing'
+gem 'mini_magick'
+gem 'shrine'
 
 # Middleware for enabling Cross-Origin Resource Sharing in Rack apps (https://github.com/cyu/rack-cors)
 gem 'rack-cors', require: 'rack/cors'

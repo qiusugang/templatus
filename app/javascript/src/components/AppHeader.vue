@@ -7,6 +7,9 @@ const tabs: {
 }[] = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
+  { name: 'Masonry', href: '/masonry' },
+  { name: 'Image Gird', href: '/grid' },
+  { name: 'Upload Image', href: '/upload' },
 ];
 </script>
 

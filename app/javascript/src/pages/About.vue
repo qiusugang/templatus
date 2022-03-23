@@ -73,8 +73,7 @@ const features: {
         name: 'Vue',
         version: Vue.version,
         href: 'https://v3.vuejs.org/',
-        description:
-          'Vue is a progressive framework for building user interfaces.',
+        description: 'Vue is a progressive framework for building user interfaces.',
       },
       {
         name: 'Tailwind CSS 3',
@@ -103,14 +102,12 @@ const features: {
       {
         name: 'Heroicons',
         href: 'https://heroicons.com/',
-        description:
-          'Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.',
+        description: 'Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.',
       },
       {
         name: 'esbuild',
         href: 'https://esbuild.github.io/',
-        description:
-          'An extremely fast JavaScript and CSS bundler and minifier',
+        description: 'An extremely fast JavaScript and CSS bundler and minifier',
       },
     ],
   },
@@ -127,8 +124,7 @@ const features: {
       {
         name: 'RSpec',
         href: 'https://rspec.info/',
-        description:
-          'Behaviour Driven Development for Ruby. Making TDD Productive and Fun.',
+        description: 'Behaviour Driven Development for Ruby. Making TDD Productive and Fun.',
       },
       {
         name: 'RuboCop',
@@ -138,20 +134,17 @@ const features: {
       {
         name: 'Jest',
         href: 'https://jestjs.io/',
-        description:
-          'Jest is a delightful JavaScript Testing Framework with a focus on simplicity',
+        description: 'Jest is a delightful JavaScript Testing Framework with a focus on simplicity',
       },
       {
         name: 'ESLint',
         href: 'https://eslint.org/',
-        description:
-          'ESLint statically analyzes your code to quickly find problems',
+        description: 'ESLint statically analyzes your code to quickly find problems',
       },
       {
         name: 'Cypress',
         href: 'https://cypress.io/',
-        description:
-          'Fast, easy and reliable testing for anything that runs in a browser.',
+        description: 'Fast, easy and reliable testing for anything that runs in a browser.',
       },
     ],
   },
@@ -189,9 +182,7 @@ const features: {
     <div v-for="group in features" :key="group.name">
       <div class="lg:grid lg:grid-cols-3 lg:gap-x-8">
         <div>
-          <h2
-            class="text-base font-semibold uppercase tracking-wide text-rails-dark"
-          >
+          <h2 class="text-base font-semibold uppercase tracking-wide text-rails-dark">
             {{ group.slogan }}
           </h2>
           <p class="mt-2 text-3xl font-extrabold text-gray-900">
@@ -199,28 +190,12 @@ const features: {
           </p>
         </div>
         <div class="mt-12 lg:col-span-2 lg:mt-0">
-          <dl
-            class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8"
-          >
-            <div
-              v-for="feature in group.items"
-              :key="feature.name"
-              class="relative"
-            >
+          <dl class="space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 sm:space-y-0 lg:gap-x-8">
+            <div v-for="feature in group.items" :key="feature.name" class="relative">
               <dt>
-                <CheckIcon
-                  class="absolute h-6 w-6 text-vue"
-                  aria-hidden="true"
-                />
-                <p
-                  class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark"
-                >
-                  <a
-                    :href="feature.href"
-                    class="hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                <CheckIcon class="absolute h-6 w-6 text-vue" aria-hidden="true" />
+                <p class="ml-9 flex items-center text-lg font-medium leading-6 text-rails-dark">
+                  <a :href="feature.href" class="hover:underline" target="_blank" rel="noopener noreferrer">
                     {{ feature.name }}
                   </a>
 
@@ -232,10 +207,7 @@ const features: {
                   </span>
                 </p>
               </dt>
-              <dd
-                class="mt-2 ml-9 text-base text-gray-600"
-                v-html="feature.description"
-              ></dd>
+              <dd class="mt-2 ml-9 text-base text-gray-600" v-html="feature.description"></dd>
             </div>
           </dl>
         </div>

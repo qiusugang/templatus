@@ -19,8 +19,8 @@ module ActionDispatch
       @file_handler =
         FileHandler.new(
           path,
-          index:,
-          headers:,
+          index: 'index',
+          headers: {},
           ##### Added "image/svg+xml"
           compressible_content_types: %r{\A(?:text/|application/javascript|image/svg\+xml)},
           #####

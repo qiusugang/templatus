@@ -1,9 +1,11 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
   mount Sidekiq::Web => '/sidekiq'
+  post "/photos/upload", to: "photos#upload"
+
+  resources :photos
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   if Rails.configuration.x.cypress
     namespace :cypress do
@@ -14,6 +16,5 @@ Rails.application.routes.draw do
   resources :clicks, only: %i[index create]
 
   get '/manifest.v1.webmanifest', to: 'statics#manifest', as: :webmanifest
-
   root to: 'vue#index'
 end

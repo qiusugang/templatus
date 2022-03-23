@@ -15,9 +15,7 @@ const { online } = useOnlineOffline();
 </script>
 
 <template>
-  <footer
-    class="flex flex-wrap items-end justify-between space-y-2 px-4 text-sm text-white sm:px-6 lg:px-0"
-  >
+  <footer class="flex flex-wrap items-end justify-between space-y-2 px-4 text-sm text-white sm:px-6 lg:px-0">
     <div class="flex w-full items-end space-x-2 sm:w-auto">
       <a
         class="hover:underline"
@@ -41,25 +39,16 @@ const { online } = useOnlineOffline();
     </div>
 
     <div class="w-full sm:w-auto">
-      <span
-        v-if="!online"
-        class="rounded bg-white py-px px-1 font-bold uppercase tracking-wide text-red-700"
+      <span v-if="!online" class="rounded bg-white py-px px-1 font-bold uppercase tracking-wide text-red-700"
         >You are offline</span
       >
     </div>
 
     <div class="flex w-full items-end sm:w-auto">
-      <a
-        class="hover:underline"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://ledermann.dev"
-      >
+      <a class="hover:underline" target="_blank" rel="noopener noreferrer" href="https://ledermann.dev">
         <svg class="inline h-6 w-6" viewBox="0 0 276 276" fill="currentColor">
           <title>ledermann.dev</title>
-          <path
-            d="M0 137l138 138 138-138-84-82-84 82 31 30 53-52 25 22-79 77-78-77L166 29 138 1"
-          />
+          <path d="M0 137l138 138 138-138-84-82-84 82 31 30 53-52 25 22-79 77-78-77L166 29 138 1" />
         </svg>
         <span class="ml-1 font-mono">ledermann.dev</span>
       </a>
